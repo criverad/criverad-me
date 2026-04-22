@@ -3,6 +3,7 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import { remarkReadingTime } from './src/remark-reading-time.mjs';
 
 import cloudflare from '@astrojs/cloudflare';
 
@@ -10,7 +11,9 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://criverad.me',
   integrations: [mdx(), sitemap()],
-
+  markdown: {
+    remarkPlugins: [remarkReadingTime],
+  },
   fonts: [
       {
           provider: fontProviders.local(),

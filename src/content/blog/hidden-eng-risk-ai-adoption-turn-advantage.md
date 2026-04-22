@@ -22,7 +22,7 @@ Let's have a look at some symptoms that might point to existing engineering prob
 - **Onboarding** new engineers takes weeks
 - **Growing tech debt** backlog that doesn't get prioritised
 - **CI breaks often** or it's routinely bypassed
-- PRs that are **hundreds of thousands long** and reviewed superficially
+- PRs that are **hundreds or thousands of lines long** and reviewed superficially
 - **Lack of automated vulnerability scanning** in the pipeline
 - **Security reviews happen late**, if at all
 - **Big and infrequent releases**
@@ -43,7 +43,7 @@ Once the foundations in your SDLC are strong, you're free to reap the benefits o
 AI is excellent at generating market research, competitive analysis, and user personas. The danger is that it's equally good at doing all of this with bad inputs. If your discovery process is built on gut feel, anecdote, and opinion — rather than real data about how users behave — then AI will produce sharper-looking documents that are just as wrong.
 
 Invest in:
-- **Business metrics and product analytics**. AI-assisted analysis is only as good as the data it draws from. Ensure you're able to measure what users actually do, when the drop off, and what drives retention.
+- **Business metrics and product analytics**. AI-assisted analysis is only as good as the data it draws from. Ensure you're able to measure what users actually do, when they drop off, and what drives retention.
 - **Lightweight experimentation** to be able to kill ideas early when data doesn't support them. Validate your hypothesis quickly with accurate data and clear reasoning.
 
 ## Product Design And Specification - Don't Design In Isolation
