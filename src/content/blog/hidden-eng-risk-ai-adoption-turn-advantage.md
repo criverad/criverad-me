@@ -14,7 +14,7 @@ There's a seductive narrative around AI adoption: embrace it, move faster, win. 
 
 AI acts as a multiplier. It amplifies whatever is already there — the good and the bad. If your foundations are shaky, the consequences compound quickly.
 
-Let's have a look at some symptoms that might point to existing engineering problems that need to be fixed:
+Let's have a look at some symptoms that might point to existing engineering problems that need to be fixed in order to maximise the benefits of AI adoption:
 
 - Features ship with **low customer adoption**
 - PRDs are written and **thrown over the wall to engineering**
@@ -27,14 +27,14 @@ Let's have a look at some symptoms that might point to existing engineering prob
 - **Security reviews happen late**, if at all
 - **Big and infrequent releases**
 - **Painful rollbacks** happening too often
-- **Errors discovered by users** before the engineering team
+- **Customers find errors** before the engineering team does
 - **Alerts fire constantly**
 - **Recurring incidents**
 - **Institutional knowledge** lives in the heads of a few senior engineers
 
 The list goes on...
 
-Everyone is well versed in AI nowadays. However, in order to reap its full potential you must first address your engineering gaps. The good news is that this has been done many times over by teams around the world.
+In order for your team to reap the full potential of AI, you must first address your engineering gaps. The good news is that this has been done many times over by teams around the world.
 
 Once the foundations in your SDLC are strong, you're free to reap the benefits of AI to its fullest:
 
@@ -43,6 +43,7 @@ Once the foundations in your SDLC are strong, you're free to reap the benefits o
 AI is excellent at generating market research, competitive analysis, and user personas. The danger is that it's equally good at doing all of this with bad inputs. If your discovery process is built on gut feel, anecdote, and opinion — rather than real data about how users behave — then AI will produce sharper-looking documents that are just as wrong.
 
 Invest in:
+
 - **Business metrics and product analytics**. AI-assisted analysis is only as good as the data it draws from. Ensure you're able to measure what users actually do, when they drop off, and what drives retention.
 - **Lightweight experimentation** to be able to kill ideas early when data doesn't support them. Validate your hypothesis quickly with accurate data and clear reasoning.
 
@@ -51,6 +52,7 @@ Invest in:
 AI makes it trivially easy to produce detailed, well-structured product requirements documents but it can't make your engineering team trust them — or care about them. AI-assisted specs will deepen this divide.
 
 Invest in:
+
 - **Engaging with engineering early**. Is this feature technically achievable given the current architecture? Do we have the skills in-house to build it? Integration constraints? Reduce the feedback loop and increase the chance of success by engaging engineering early on and use their feedback to hone your assumptions and nail down feature feasibility.
 
 > Use AI to produce specs that can quickly be turned into code by engineering
@@ -62,17 +64,19 @@ You won't need to wait for customer research or complete your PRD in order to te
 AI can scaffold entire systems, generate service boilerplate, and wire up infrastructure configurations in minutes. However, not having clearly defined architecturel principles and governance will result in architectural madness: inconsistent patterns across services, duplicated capabilities, and systems that don't compose well.
 
 Invest in:
+
 - **ADRs** that capture the why.
 - **Design Review Processes** for significant changes.
 - **Tech Radar** to guide and constraint technology choices.
 
 ## Development Practices - Clean Up The Codebase Before AI Learns From It
-AI generates code fast, but teams underestimate that AI follows the patterns it finds in your codebase. If those patterns are good, AI will reinforce them. If the codebase is inconsistent, riddled with workarounds, or carrying years of unresolved technical debt, AI will replicate the mess. 
 
+AI generates code fast, but teams underestimate that AI follows the patterns it finds in your codebase. If those patterns are good, AI will reinforce them. If the codebase is inconsistent, riddled with workarounds, or carrying years of unresolved technical debt, AI will replicate the mess. 
 
 > Technical debt isn't just a productivity problem in the AI era. It becomes a code quality multiplier risk.
 
 Invest in:
+
 - **Addressing technical debt** before scaling AI-assisted development. A messy codebase is training signal for bad output.
 - **Coding standards**. Naming, structure, error handling, and logging patterns should be agreed upon, documented, and consistently applied.
 - **Static analysis tools**. Automated code enforcement using linters, formatters, and pre-commit hooks and integrated quality gates (eg SonarQube) to raise concerns about coverage, complexity, tech debt, etc.
@@ -86,6 +90,7 @@ AI generates code faster than most teams are set up to review it. If your review
 > The answer isn't to slow down AI — it's to make the pipeline fast enough to keep up
 
 Invest in:
+
 - **Small, focused PRs** as a team norm — a single clear purpose, a clear description, and a size that can be reviewed meaningfully.
 - **Automated code analysis** and linting.
 - **Dependency and vulnerability scanning** on every build, not just periodic audits.
@@ -98,6 +103,7 @@ AI-assisted code review will take your pipeline to the next level: using AI to r
 If you have no testing strategy or your test coverage is weak, AI-generated code is a liability you can't see accumulating. AI can also write tests — and teams without a testing strategy will accept AI-generated tests that test the wrong things at the wrong level, generating false confidence.
 
 Invest in:
+
 - A deliberate **test strategy** covering what gets tested at unit, integration, and end-to-end levels.
 - Automated **regression suites** that run on every change.
 - **Shared quality ownership** across the whole team, not siloed in a QA function.
@@ -138,6 +144,7 @@ Invest in:
 Teams with solid observability absorb added complexity because when something goes wrong, they find it quickly and recover faster. There's a subtler problem too: if you can't measure outcomes, you can't tell whether the features AI helped you ship faster actually worked.
 
 Invest in:
+
 - **Structured logging** and **distributed tracing** across all critical systems so failures can be diagnosed quickly.
 - **SLOs and SLIs** so the team has a shared, formal definition of what "working" means.
 - Actionable **alerting that fires on symptoms** requiring a response — not noise that trains the team to ignore it.
@@ -150,6 +157,7 @@ Teams with structured incident response turn each failure into institutional lea
 > When something breaks, teams need to ask "why did this happen?" without hiding behind "the AI wrote that code."
 
 Invest in:
+
 - **On-call rotations** and escalation paths that are clearly defined.
 - **Runbooks** for common and anticipated failure modes.
 - **Blameless post-mortems** after every significant incident, with explicit action items and visible follow-through.
@@ -162,6 +170,7 @@ If your team doesn't define success metrics before building, run experiments, an
 > The genuine competitive advantage from AI isn't just building faster — it's learning faster
 
 Invest in:
+
 - **Success metrics** defined before development begins — not retrofitted after shipping.
 - **Experimentation infrastructure** that supports A/B testing and controlled rollouts, so features can be validated before full release.
 - Regular **outcome reviews** that ask whether shipped features achieved their goals and are willing to kill or reverse the ones that didn't.
@@ -174,6 +183,7 @@ If your team doesn't document architectural decisions, system behaviours, and op
 > As documentation degrades, the context available for future AI-assisted work degrades too
 
 Invest in:
+
 - **Docs-as-code** practices with documentation maintained in the same repository as the code it describes.
 - **ADRs**.
 - **Operational runbooks** kept current alongside the systems they cover, treated as living documents rather than one-off artifacts.
