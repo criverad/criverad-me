@@ -83,8 +83,6 @@ Invest in:
 - **Trunk-based development** or **short-lived branches** to keep integration cycles tight.
 - Small, **incremental changes** as the default unit of work.
 
-I talk about how to use AI to your advantage to reduce this gap in my post [Using AI to Close Your Tech Debt Gap — And Keep It Closed](../ai-tech-debt-automation)
-
 ## Code Review And Build Pipeline - Build The Guardrails That Keep Up With AI
 
 AI generates code faster than most teams are set up to review it. If your review process is slow and manual, AI-assisted development will produce a backlog of unreviewed work, the pressure to merge will build, and reviews will quietly become rubber stamps. Prefer PRs that are easy to review. A mature build pipeline catches what human reviewers miss — consistently, on every change. 
