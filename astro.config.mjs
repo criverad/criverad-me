@@ -3,6 +3,8 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
 import { remarkReadingTime } from './src/remark-reading-time.mjs';
 
 import cloudflare from '@astrojs/cloudflare';
@@ -13,6 +15,14 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
+    rehypePlugins: [
+      rehypeSlug,
+      [rehypeAutolinkHeadings, {
+        behavior: 'prepend',
+        properties: { class: 'anchor-link', ariaHidden: true, tabIndex: -1 },
+        content: { type: 'text', value: '#' },
+      }],
+    ],
   },
   fonts: [
       {

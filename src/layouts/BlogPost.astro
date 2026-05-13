@@ -52,6 +52,21 @@ const { title, description, pubDate, updatedDate, heroImage, minutesRead } = Ast
 			.last-updated-on {
 				font-style: italic;
 			}
+			:global(.prose :is(h2, h3, h4)) {
+				position: relative;
+			}
+			:global(.prose :is(h2, h3, h4) a.anchor-link) {
+				position: absolute;
+				left: -1.2em;
+				opacity: 0;
+				text-decoration: none;
+				color: rgb(var(--gray));
+				font-weight: 400;
+				transition: opacity 0.15s ease;
+			}
+			:global(.prose :is(h2, h3, h4):hover a.anchor-link) {
+				opacity: 1;
+			}
 		</style>
 	</head>
 
