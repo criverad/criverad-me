@@ -61,13 +61,13 @@ You won't need to wait for customer research or complete your PRD in order to te
 
 ## Architecture And System Design
 
-AI can scaffold entire systems, generate service boilerplate, and wire up infrastructure configurations in minutes. However, not having clearly defined architecturel principles and governance will result in architectural madness: inconsistent patterns across services, duplicated capabilities, and systems that don't compose well.
+AI can scaffold entire systems, generate service boilerplate, and wire up infrastructure configurations in minutes. However, not having clearly defined architectural principles and governance will result in architectural madness: inconsistent patterns across services, duplicated capabilities, and systems that don't compose well.
 
 Invest in:
 
 - **ADRs** that capture the why.
 - **Design Review Processes** for significant changes.
-- **Tech Radar** to guide and constraint technology choices.
+- **Tech Radar** to guide and constrain technology choices.
 
 ## Development Practices - Clean Up The Codebase Before AI Learns From It
 
