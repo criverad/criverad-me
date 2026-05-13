@@ -5,13 +5,15 @@ pubDate: 'May 13 2026'
 draft: true
 ---
 
+_This post addresses some of the potential issues and risks your team may find during their AI adoption journey. Read more about them in [The Hidden Engineering Risks in AI Adoption](/blog/hidden-eng-risk-ai-adoption-turn-advantage/#development-practices---clean-up-the-codebase-before-ai-learns-from-it)_
+
 ## The Gap That Never Gets Fixed
 
 I've watched teams carry debt for years — not because they didn't care, but because the process never made space for it. There's always a feature to ship, a bug to fix, a deadline to hit.
 
 [Tech debt builds up and makes teams slower](https://www.alixpartners.com/insights/102jlar/can-ai-solve-the-rising-costs-of-technical-debt/) as it makes it harder to introduce new features. The longer it sits, the more it compounds — and the harder it is to justify paying it down when velocity is already under pressure.
 
-AI changes the economics of this problem by introducing easier, more automated ways to address tech debt even before it builds up. If you want to understand why unresolved debt is especially dangerous when AI is writing code, [The Hidden Engineering Risk in AI Adoption](/blog/hidden-eng-risk-ai-adoption-turn-advantage/#development-practices---clean-up-the-codebase-before-ai-learns-from-it) covers that in depth.
+AI changes the economics of this problem by introducing easier, more automated ways to address tech debt even before it builds up.
 
 ## Close the Gap
 
