@@ -40,7 +40,7 @@ For bigger refactors, scope tightly and use the harness pattern: structured inpu
 
 The model I'd like to see more teams adopt: a background loop that runs without anyone manually scheduling it. A scheduled CI job — a GitHub Action running weekly is enough to start — scans the codebase using your debt-identification prompts and logs findings to a living register, prioritised by impact. From that register, a second job picks up tasks that are clearly scoped and well-understood, writes the fix, and opens a draft PR for review.
 
-![AI Tech Debt Automated Loop](../../assets/ai-tech-debt-loop.excalidraw.png)
+![AI Tech Debt Automated Loop](/ai-tech-debt-loop.excalidraw.png)
 
 The team's job:
 
