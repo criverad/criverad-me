@@ -14,6 +14,19 @@ export default defineConfig({
   site: 'https://criverad.me',
   integrations: [mdx(), sitemap()],
   markdown: {
+    shikiConfig: {
+      wrap: false,
+      transformers: [
+        {
+          name: 'wrap-toggle',
+          pre(node) {
+            if (this.options.meta?.__raw?.includes('wrap')) {
+              this.addClassToHast(node, 'wrap')
+            }
+          },
+        },
+      ],
+    },
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: [
       rehypeSlug,

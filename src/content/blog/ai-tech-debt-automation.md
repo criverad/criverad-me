@@ -1,8 +1,7 @@
 ---
 title: 'Using AI to Close your Engineering Gaps — Tech Debt'
 description: "Tech debt doesn't get fixed because the process never makes space for it. AI changes the economics of the problem — here's how to close the gap and automate the upkeep so it never comes back."
-pubDate: 'May 13 2026'
-draft: true
+pubDate: 'May 18 2026'
 ---
 
 _This post addresses some of the potential issues and risks your team may find during their AI adoption journey. Read more about them in [The Hidden Engineering Risks in AI Adoption](/blog/hidden-eng-risk-ai-adoption-turn-advantage/#development-practices---clean-up-the-codebase-before-ai-learns-from-it)_
@@ -19,16 +18,14 @@ AI changes the economics of this problem by introducing easier, more automated w
 
 Point your AI agent at your codebase to surface the worst offenders — duplicate logic, dead code, high-churn modules, anti-patterns that keep getting copied. You'll have a prioritised heatmap of where the rot lives before the end of the week. A prompt like this gives you a structured starting point (raw material for the team to triage):
 
-```
-Analyse this module for technical debt. Flag: duplicate logic, functions over 50 lines,
-missing error handling, magic numbers, commented-out code, and unresolved TODOs.
-For each issue, rate severity (high/medium/low) and estimate remediation effort
-(small/medium/large). Return structured JSON.
+```text wrap
+Analyse this module for technical debt. Flag: duplicate logic, functions over 50 lines, missing error handling, magic numbers, commented-out code, and unresolved TODOs.
+For each issue, rate severity (high/medium/low) and estimate remediation effort (small/medium/large). Return structured JSON.
 ```
 
 Use AI to generate refactoring PRs for the clearly-scoped fixes: renaming, extracting functions, removing dead code, modernising old patterns. Review them small and often — not as a project, as a background habit. A well-constrained remediation prompt matters here:
 
-```
+```text wrap
 The following function has been flagged as tech debt: [code]. The issue is [description].
 Refactor it to align with [preferred pattern], without changing behaviour.
 All existing tests must pass. Output only the changed file.
