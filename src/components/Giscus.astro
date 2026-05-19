@@ -1,0 +1,38 @@
+---
+// Giscus comment system — backed by GitHub Discussions.
+// Setup checklist (one-time):
+//   1. Create a NEW public GitHub repo (e.g. "criverad-me-comments")
+//   2. In that repo → Settings → Features → enable "Discussions"
+//   3. Go to https://giscus.app, fill in your repo, copy the two IDs below
+//   4. Replace REPO_ID and CATEGORY_ID placeholders
+---
+
+<section class="giscus-wrapper">
+  <script
+    is:inline
+    src="https://giscus.app/client.js"
+    data-repo="criverad/criverad-me-comments"
+    data-repo-id="R_kgDOSghdEA"
+    data-category="General"
+    data-category-id="DIC_kwDOSghdEM4C9Scs"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+  ></script>
+</section>
+
+<style>
+  .giscus-wrapper {
+    width: 720px;
+    max-width: calc(100% - 2em);
+    margin: 2em auto 0;
+    padding: 0 1em;
+  }
+</style>
